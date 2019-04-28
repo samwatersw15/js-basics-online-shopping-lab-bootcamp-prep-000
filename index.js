@@ -24,11 +24,11 @@ function viewCart() {
  if (a === 0) {
    return 'Your shopping cart is empty'
  } 
- let cartName = []
- let cartPrice = []
+ let cartArray = []
  for (let i = 0; i<cart.length; i++) {
-   
+   cartArray.push(`you have ${cart[i]['itemName']} at ${cart[i]['itemPrice']}`)
  }
+ console.log(cartArray)
 }
 
 function total() {
