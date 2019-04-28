@@ -38,7 +38,7 @@ function viewCart() {
 
 function total() {
   // write your code here
-  totalPrice = 0
+  var totalPrice = 0
   for (let i = 0; i<cart.length; i++) {
     var thisPrice = cart[i]['itemPrice']
     totalPrice += thisPrice
