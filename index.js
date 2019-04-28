@@ -29,7 +29,7 @@ function viewCart() {
    cartArray.push(` ${cart[i]['itemName']} at $${cart[i]['itemPrice']}`)
  }
  
- return 'In your cart, you have '.concat(cartArray.slice(0,cartArray.length-1))+', and'.concat(cartArray.slice(cartArray.length-1))+'.'
+ return 'In your cart, you have'.concat(cartArray.slice(0,cartArray.length-1))+', and'.concat(cartArray.slice(cartArray.length-1))+'.'
 }
 
 function total() {
