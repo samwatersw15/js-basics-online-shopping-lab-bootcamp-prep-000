@@ -16,19 +16,19 @@ function addToCart(item) {
    'itemPrice':price
  }
  cart.push(obj)
- return `${item} has been added to your cart`
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
  let a = cart.length
  if (a === 0) {
-   return 'Your shopping cart is empty'
+   return 'Your shopping cart is empty.'
  } 
  let cartArray = []
  for (let i = 0; i<cart.length; i++) {
    cartArray.push(`you have ${cart[i]['itemName']} at ${cart[i]['itemPrice']}`)
  }
- console.log(cartArray)
+ console.log('In your cart, you have '.concat(cartArray))
 }
 
 function total() {
