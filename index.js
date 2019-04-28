@@ -28,8 +28,8 @@ function viewCart() {
  for (let i = 0; i<cart.length; i++) {
    cartArray.push(` you have ${cart[i]['itemName']} at $${cart[i]['itemPrice']}`)
  }
- let b = cartArray.length
- return 'In your cart,'.concat(cartArray.slice(0,b-1))+'and'.concat(cartArray.slice(b))+'.'
+ 
+ return 'In your cart,'.concat(cartArray.slice(0,cartArray.length-1))+'and'.concat(cartArray.slice(cartArray.length-1))+'.'
 }
 
 function total() {
