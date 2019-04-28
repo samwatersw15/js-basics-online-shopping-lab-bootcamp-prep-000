@@ -43,7 +43,7 @@ function total() {
     var thisPrice = cart[i]['itemPrice']
     total += thisPrice
   }
-  return total
+  return totalPrice
 }
 
 function removeFromCart(item) {
