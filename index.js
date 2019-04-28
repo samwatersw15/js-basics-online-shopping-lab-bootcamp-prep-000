@@ -26,9 +26,9 @@ function viewCart() {
  } 
  let cartArray = []
  for (let i = 0; i<cart.length; i++) {
-   cartArray.push(` you have ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`)
+   cartArray.push(` you have ${cart[i]['itemName']} at $${cart[i]['itemPrice']}`)
  }
- return 'In your cart,'.concat(cartArray)
+ return 'In your cart,'.concat(cartArray)+'.'
 }
 
 function total() {
